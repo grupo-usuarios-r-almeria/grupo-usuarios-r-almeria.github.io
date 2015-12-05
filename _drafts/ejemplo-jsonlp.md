@@ -3,19 +3,18 @@ layout: post-jsonld
 #Datos del Evento
 title: "Título del evento"
 description: "Breve descripción del evento"
-thumbnail: "/recursos/2015-07-17/imagenrepresentativa.jpg"
+thumbnail: "/recursos/nombre-carpeta-fecha/imagenrepresentativa.jpg"
 #Fecha
 startDate: 2015-07-17T19:00
 endDate: 2015-07-17T21:00
 #Lugar
-place: "Realtrack Systems"
-street: "Calle Guinea nº 2"
+place: "lugar"
+street: "calle"
 locality: "Almería"
-postalCode: 04009
-map: http://bit.ly/RealTrackSystems
+postalCode: 04005
+map: URL
 category: actividades
 ---
-
 ### DESCRIPCIÓN
 
 Descripción extensa del tipo de actividad
@@ -28,9 +27,7 @@ Explicación sobre el tema a tratar en esta ocasión
 
 ---
 
-
 ### PROGRAMA
-
 
 | 19:00-19:15   | Presentaciones de los asistentes  |
 | 19:15-19:45   | Cosa 1 |
@@ -39,12 +36,8 @@ Explicación sobre el tema a tratar en esta ocasión
 
 ---
 
-
-
 ### DESPUÉS DEL EVENTO
 
-Tras la jornada es habitual que parte del grupo nos vayamos de tapeo por las cercanías, perfecto para ir conociéndonos más entre nosotros.
+Tras el evento, a decisión de los asistentes, se puede promover continuar con unas cervezas por la zona para comentar impresiones y hacer nuevas relaciones profesionales y sociales.
 
 ---
-
-

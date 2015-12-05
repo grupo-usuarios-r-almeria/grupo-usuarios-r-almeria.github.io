@@ -2,7 +2,6 @@
 layout: default
 twittercard: true
 ---
-
 {% assign months = "enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre" | split: "|" %}
 {% assign m = page.date | date: "%-m" | minus: 1 %}
 {% assign day = page.date | date: "%d" %}
@@ -12,31 +11,32 @@ twittercard: true
 {% assign m2 = page.endDate | date: "%-m" | minus: 1 %}
 {% assign month2 = months[m2] %}
 
-
-
 <div class="container">
     <article>
-        <h2>{{ page.title }}</h2>
+        <h2>{{page.title}}</h2>
+		
         <br>
-        <h4>{{day}} de {{month}} del {{year}} / {{page.locality}} </h4>
+		
+        <h4>{{day}} de {{month}} del {{year}} / {{page.locality}}</h4>
 
         <hr class="large">
-        {{ content }}
+		
+        {{content}}
 
         <h3 id="localizacion">LOCALIZACIÓN</h3>
 
         <p>Lugar: <strong><a href="{{page.map}}">{{page.place}}, {{page.street}}</a></strong>, {{page.locality}}.</p>
-        {{ if month == month2 }}
+        {% if month == month2 %}
         <p>Fecha: <strong>Del {{day}} al {{day2}} de {{month}} del {{year}}</strong></p>
-        {{ else }}
+        {% else %}
         <p>Fecha: <strong>Del {{day}} de {{month}} al {{day2}} de {{month2}} del {{year}}</strong></p>
-        {{ endif }}
-
+        {% endif %}
     </article>
+	
     <hr class="large"/>
+	
     <div id="discourse-comments" class="comment"></div>
 </div>
-
 
 <script type="text/javascript">
     var discourseUrl = "http://foro.hacklabalmeria.net/",
@@ -50,7 +50,6 @@ twittercard: true
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
     })();
 </script>
-
 
 <script type="application/ld+json">
 {
@@ -80,8 +79,5 @@ twittercard: true
     "name": "Hacklab Almería",
     "description": "Desarrolladores, diseñadores, fabricantes, periodistas y aficionados reunidos para divertirse con la tecnología"
   }
-
 }
-
 </script>
-

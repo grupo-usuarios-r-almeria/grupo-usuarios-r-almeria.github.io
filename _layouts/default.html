@@ -5,22 +5,20 @@
     <!-- Atom / RSS-->
     <link rel="alternate" type="application/atom+xml" title="Eventos" href="{{site.url}}/atom.xml"/>
 
-    <!-- Basic Page Needs
-    ================================================== -->
-    <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.name }}</title>
+    <!-- Basic Page Needs -->
+    <title>{% if page.title %}{{page.title}} &#8211; {% endif %}{{site.name}}</title>
 
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>        <![endif]-->
-    <!-- Mobile Specific Metas
-	================================================== -->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+	<!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- CSS
-	================================================== -->
-    <link rel="stylesheet" href="{{ site.url }}/css/bootstrap.css">
-    <link rel="stylesheet" href="{{ site.url }}/css/style.css">
+    
+	<!-- CSS -->
+    <link rel="stylesheet" href="{{site.url}}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{site.url}}/css/style.css">
 
-    <!-- Favicon
-	================================================== -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{site.url}}/recursos/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="{{site.url}}/recursos/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}/recursos/favicons/apple-icon-72x72.png">
@@ -46,21 +44,18 @@
     <meta property="og:description" content="{{page.description}}" />
     <meta property="og:image" content="http://{{site.domain}}{{page.thumbnail}}" />
     {% endif %}
-
-
-
 </head>
+
 <body>
 <div class="container">
     <header>
         <div class="col-md-4 center">
-            <img src="{{ site.url }}/recursos/logo-225x225.png" alt="hacklab_almería" class="logo"/>
+            <img src="{{site.url}}/recursos/logo-225x225.png" alt="grupo_de_usuarios_de_r" class="logo"/>
         </div>
         <div class="col-md-8">
-            <h1>#GenteQueHaceCosas</h1>
+            <h1>Grupo de Usuarios de R Almería</h1>
 
-            <h3 class="hidden-xs">Desarrolladores, diseñadores, fabricantes, periodistas y aficionados reunidos para divertirse con la
-                tecnología</h3>
+            <h3 class="hidden-xs">Una comunidad con el objetivo de congregar a todos los usuarios de R en Almería para dar visibilidad y poner en valor todo el talento que se oculta en nuestra tierra.</h3>
         </div>
     </header>
 </div>
@@ -70,10 +65,8 @@
     <ul class="horizontal">
         <li><a href="{{site.url}}/" class="button">Portada</a></li>
         <li><a href="http://foro.hacklabalmeria.net" class="button">Foro</a></li>
-        <li><a href="{{ site.url }}/actividades" class="button">Actividades</a></li>
-        <li><a href="{{ site.url }}/sala-charla" class="button">Sala de charla</a></li>
-        
-        <li><a href="http://redmine.hacklabalmeria.net" class="button">Redmine</a></li>
+        <li><a href="{{site.url}}/actividades" class="button">Actividades</a></li>
+		<li><a href="https://almeriarusers.wordpress.com/" class="button">Blog</a></li>
     </ul>
 </div>
 
@@ -81,29 +74,27 @@
     {{content}}
 </div>
 
-    <footer>
-        <div class="container">
-            <div class="col-xs-6">
-                &COPY; HackLab Almería y respectivos <a href="https://github.com/HackLab-Almeria/hacklab-almeria.github.io/graphs/contributors">autores</a> 2015. <a href="https://creativecommons.org/licenses/by/4.0/">
-                <br><img style="vertical-align: text-middle;" alt="Attribution 4.0 International (CC BY 4.0)" src="/recursos/CC-by.png"/></a>
-            </div>
-            <div class="col-xs-5 right">
-                <a href="https://twitter.com/HackLabAl" title="Twitter de HackLab Almería">
-                    <img src="{{ site.url }}/recursos/twitter.png" width="30" alt="Twitter de HackLab Almería"></a>
-                <a href="https://es-es.facebook.com/HackLabAlmeria" title="Facebook de HackLab Almería">
-                    <img src="{{ site.url }}/recursos/facebook.png" width="30" alt="Facebook de HackLab Almería"></a>
-                <a href="https://plus.google.com/+HacklabalmeriaNet" rel="publisher" title="G+ de HackLab Almería">
-                    <img src="{{ site.url }}/recursos/google.png" width="30" alt="G+ de HackLab Almería"></a>
-                <a href="https://www.youtube.com/channel/UCrzZ7vmCw2HuY8EuwWlM1GQ" rel="publisher" title="Canal Youtube de HackLab Almería">
-                    <img src="{{ site.url }}/recursos/youtube.png" width="25" alt="Canal Youtube de HackLab Almería"></a>
-                <a href="https://storify.com/hacklabal" rel="publisher" title="Storify de HackLab Almería">
-                    <img src="{{ site.url }}/recursos/storify.png" width="25" alt="Storify de HackLab Almería"></a>
-                <a href="https://github.com/HackLab-Almeria" title="GitHub de HackLab Almería">
-                    <img src="{{ site.url }}/recursos/git.png" width="30" alt="GitHub de HackLab Almería"></a>
-            </div>
-        </div>
-    </footer>
-
+<footer>
+	<div class="container">
+		<div class="col-xs-6">
+			&COPY; HackLab Almería y respectivos <a href="https://github.com/HackLab-Almeria/hacklab-almeria.github.io/graphs/contributors">autores</a> 2015.
+			<br>
+			&COPY; <a href="http://www.indavelopers.com">Indavelopers</a> y respectivos <a href="https://github.com/grupo-usuarios-r-almeria/grupo-usuarios-r-almeria.github.io/graphs/contributors">autores</a> 2015.
+			<br>
+			<a href="https://creativecommons.org/licenses/by/4.0/">
+				<img style="vertical-align: text-middle;" alt="Attribution 4.0 International (CC BY 4.0)" src="/recursos/CC-by.png"/>
+			</a>
+		</div>
+		
+		<div class="col-xs-5 right">
+			<a href="https://twitter.com/HackLabAl" title="Twitter de HackLab Almería"><img src="{{site.url}}/recursos/twitter.png" width="30" alt="Twitter de HackLab Almería"></a>
+			<a href="https://es-es.facebook.com/HackLabAlmeria" title="Facebook de HackLab Almería"><img src="{{site.url}}/recursos/facebook.png" width="30" alt="Facebook de HackLab Almería"></a>
+			<a href="https://plus.google.com/+HacklabalmeriaNet" rel="publisher" title="G+ de HackLab Almería"><img src="{{site.url}}/recursos/google.png" width="30" alt="G+ de HackLab Almería"></a>
+			<a href="https://www.youtube.com/channel/UCrzZ7vmCw2HuY8EuwWlM1GQ" rel="publisher" title="Canal Youtube de HackLab Almería"><img src="{{site.url}}/recursos/youtube.png" width="25" alt="Canal Youtube de HackLab Almería"></a>
+			<a href="https://github.com/HackLab-Almeria" title="GitHub de HackLab Almería"><img src="{{site.url}}/recursos/git.png" width="30" alt="GitHub de HackLab Almería"></a>
+		</div>
+	</div>
+</footer>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -139,9 +130,8 @@
 <script type="text/javascript" src="/js/jquery-1.11.2.js"></script>
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function (event) {
-        cookieChoices.showCookieConsentBar('Esta página usa Cookies. Si continuas navegando estás aceptando su uso.', 'Cerrar', 'Más Información.', '{{site.url}}/aviso/');
+        cookieChoices.showCookieConsentBar('Esta página usa Cookies. Si continuas navegando significará que consiestes su uso.', 'Cerrar', 'Más Información.', '{{site.url}}/aviso/');
     });
 </script>
-
 </body>
 </html>

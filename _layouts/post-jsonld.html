@@ -2,7 +2,6 @@
 layout: default
 twittercard: true
 ---
-
 {% assign months = "enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre" | split: "|" %}
 {% assign m = page.date | date: "%-m" | minus: 1 %}
 {% assign day = page.date | date: "%d" %}
@@ -11,24 +10,25 @@ twittercard: true
 
 <div class="container">
     <article>
-        <h2>{{ page.title }}</h2>
+        <h2>{{page.title}}</h2>
         <br>
-        <h4>{{day}} de {{month}} del {{year}} / {{page.locality}} </h4>
+        <h4>{{day}} de {{month}} del {{year}} / {{page.locality}}</h4>
 
         <hr class="large">
-        {{ content }}
+		
+        {{content}}
 
         <h3 id="localizacion">LOCALIZACIÓN</h3>
 
         <p>Lugar: <strong><a href="{{page.map}}">{{page.place}}, {{page.street}}</a></strong>, {{page.locality}}.</p>
         <p>Fecha: <strong>{{day}} de {{month}} del {{year}}</strong></p>
-        <p>Hora: <strong>de {{page.startDate | date: "%H:%M" }} a {{ page.endDate | date: "%H:%M" }}</strong></p>
-
+        <p>Hora: <strong>de {{page.startDate | date: "%H:%M" }} a {{page.endDate | date: "%H:%M"}}</strong></p>
     </article>
+	
     <hr class="large"/>
+	
     <div id="discourse-comments" class="comment"></div>
 </div>
-
 
 <script type="text/javascript">
     var discourseUrl = "https://foro.hacklabalmeria.net/",
@@ -42,7 +42,6 @@ twittercard: true
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
     })();
 </script>
-
 
 <script type="application/ld+json">
 {
@@ -72,8 +71,6 @@ twittercard: true
     "name": "Hacklab Almería",
     "description": "Desarrolladores, diseñadores, fabricantes, periodistas y aficionados reunidos para divertirse con la tecnología"
   }
-
 }
-
 </script>
 

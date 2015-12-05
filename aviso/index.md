@@ -2,7 +2,6 @@
 layout: page
 title: Aviso Legal
 ---
-
 #### Política de Cookies
 
 HackLab Almería tiene la obligación por el Real Decreto-ley 13/2012 que modifica la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, de informar y obtener el consentimiento del ciudadano acerca del uso de las cookies en sus páginas web.
