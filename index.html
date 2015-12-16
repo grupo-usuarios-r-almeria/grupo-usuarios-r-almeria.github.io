@@ -35,13 +35,11 @@ title: Grupo de Usuarios de R Almería
 		
         <p>En el Grupo de Usuarios de R Almería colaboramos estrechamente con <a>Hacklab Almería</a> en la realización de eventos y en el apoyo mutuo a la comunidad. Mediante esta colaboración, Hacklab Almería se ofrece para integrar nuestro foro en el suyo propio, y propiciar de esta manera más aún la <strong>polinización cruzada</strong>.</p>
 		
-		<p>Encuentra en el foro actividades, grupos de trabajo y personas con tus mismas inquietudes. Participa de sus discusiones y eventos y propón los tuyos propios según tus intereses concretos.</p>
-		
 		<h5>Últimos Mensajes</h5>
 	
 		<div id="ultimosmensajes"></div>
 		
-        <a href="http://foro.hacklabalmeria.net/" class="button" title="Entrar al foro">Acceso al foro (categoría específica del grupo por crear)</a>
+        <a href="https://foro.hacklabalmeria.net/c/sw-almeria/Usuarios-R" class="button" title="Entrar al foro">Acceso al foro</a>
     </div>	
 	
     <div class="col-md-4">
@@ -60,11 +58,14 @@ title: Grupo de Usuarios de R Almería
         $.ajax({url:'http://json2jsonp.com/?url='+discourseUrl+'latest.json',
             dataType: 'jsonp',
             success:function(data){
-                data = data.topic_list.topics.slice(0, 10);
+                data = data.topic_list.topics.slice(0, 100);
 
                 var elemento='<ul>'
                 $.each(data,function(index,element){
-                    elemento += '<li><a target=_blank href='+discourseUrl + 't/'+ element.slug +'/'+element.id+'>'+element.title+'</a> - '+element.last_poster_username+'</li>';
+				
+					if (element.category_id == 46) {
+						elemento += '<li><a target=_blank href='+discourseUrl + 't/'+ element.slug +'/'+element.id+'>'+element.title+'</a> - '+element.last_poster_username+'</li>';
+					}
                 });
 
                 elemento+='</ul>';

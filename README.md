@@ -72,6 +72,7 @@ Una vez esté en publicada en actividades, el sistema **creará automáticamente
  * Enlace a foro en portada.
  * Modificar atom y sitemap.
  * Tests con travis-CI.
+ * Mail de contacto.
 
 ### Licencia
 
