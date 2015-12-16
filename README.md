@@ -54,7 +54,6 @@ Una vez esté en publicada en actividades, el sistema **creará automáticamente
 ### To-do list
 
  * Modificar Readme.
- * Links RRSS.
  * Modificar aviso legal.
  * Modificar página 404.
  * Configurar Google Analytics.
@@ -63,13 +62,10 @@ Una vez esté en publicada en actividades, el sistema **creará automáticamente
  * Títulos de las páginas.
  * Modificar contenido index.html.
  * Modificar _config.yml.
- * Link en portada a blog.
  * Modificar URL en post, post*jsonld y post*jsonld*varios*dias.
  * Configurar calendario en Actividades.
- * Modificar aviso legal.
  * Eliminar favicon en /css.
  * Elegir color principal y cambiar en style.css (al final).
- * Enlace a foro en portada.
  * Modificar atom y sitemap.
  * Tests con travis-CI.
  * Mail de contacto.
