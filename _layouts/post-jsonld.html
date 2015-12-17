@@ -11,7 +11,7 @@ twittercard: true
 <div class="container">
     <article>
         <h2>{{page.title}}</h2>
-        <br>
+
         <h4>{{day}} de {{month}} del {{year}} / {{page.locality}}</h4>
 
         <hr class="large">
@@ -25,23 +25,8 @@ twittercard: true
         <p>Hora: <strong>de {{page.startDate | date: "%H:%M" }} a {{page.endDate | date: "%H:%M"}}</strong></p>
     </article>
 	
-    <hr class="large"/>
-	
-    <div id="discourse-comments" class="comment"></div>
+	<hr class="large">
 </div>
-
-<script type="text/javascript">
-    var discourseUrl = "https://foro.hacklabalmeria.net/",
-            discourseEmbedUrl = 'http://{{site.domain}}{{page.url}}';
-
-    (function () {
-        var d = document.createElement('script');
-        d.type = 'text/javascript';
-        d.async = true;
-        d.src = discourseUrl + 'javascripts/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-    })();
-</script>
 
 <script type="application/ld+json">
 {
@@ -66,11 +51,10 @@ twittercard: true
   },
   "performer": {
     "@type": "Organization",
-    "email": "hacklabal@gmail.com",
-    "logo": "http://{{site.domain}}/recursos/logo-225x225.png",
-    "name": "Hacklab Almería",
-    "description": "Desarrolladores, diseñadores, fabricantes, periodistas y aficionados reunidos para divertirse con la tecnología"
+    "email": "almeriarusers@gmail.com",
+    "logo": "http://{{site.domain}}/recursos/logo-usuarios-r-almeria.png",
+    "name": "Grupo de Usuarios de R Almería",
+    "description": "Grupo de estudiantes, profesionales e interesados en R en general, unidos con el objetivo de compartir conocimientos y experiencia."
   }
 }
 </script>
-

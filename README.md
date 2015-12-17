@@ -40,7 +40,7 @@ Para crear una nueva actividad, debes copiar unas de las plantillas (preferiblem
 
 Para poder ver los borradores en el servidor local, deberás ejecutar Jekyll en modo draft con `jekyll serve --drafts`.
 
-Los post de actividad se maquetan mediante markdown. Adjuntamos [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+Los post de actividad se maquetan mediante markdown. Se adjunta [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Una vez hayas terminado la actividad y quieras _publicarla_, símplemente debes moverla a la carpeta `_posts`.
 
@@ -51,28 +51,20 @@ Una vez hayas terminado la actividad y quieras _publicarla_, símplemente debes 
 
 Una vez esté en publicada en actividades, el sistema **creará automáticamente un post en la categoría de actividades.** Tras ello, seguiremos el proceso de build - push - pull request explicado anteriormente.
 
+### Contacto
+[almeriarusers@gmail.com](mailto:almeriarusers@gmail.com)
+Webmaster: [Indavelopers](mailto:info@indavelopers.com)
+
 ### To-do list
 
- * Modificar Readme.
- * Modificar aviso legal.
- * Modificar página 404.
- * Configurar Google Analytics.
- * Modificar o borrar gaug.es. 
- * Modificar metatags Twitter card en default.html.
- * Títulos de las páginas.
- * Modificar contenido index.html.
- * Modificar _config.yml.
- * Modificar URL en post, post*jsonld y post*jsonld*varios*dias.
- * Configurar calendario en Actividades.
- * Eliminar favicon en /css.
- * Elegir color principal y cambiar en style.css (al final).
- * Modificar atom y sitemap.
- * Tests con travis-CI.
- * Mail de contacto.
+* Configurar calendario en Actividades.
+* Modificar logotipos y favicon.
+* Elegir paleta de colores y cambiar en style.css (al final del documento).
+* Tests con travis-CI.
 
 ### Licencia
 
-© HackLab Almería y respectivos autores 2015.
+© HackLab Almería y respectivos autores 2015 (autor original).
 © [Indavelopers](http://www.indavelopers.com), Grupo de Usuarios de R Almería y respectivos autores 2015.
 Licencia [Attribution 4.0 International (CC BY 4.0)][5]  
 [![Attribution 4.0 International (CC BY 4.0)](http://i.creativecommons.org/l/by/4.0/88x31.png "Attribution 4.0 International (CC BY 4.0)")][5]

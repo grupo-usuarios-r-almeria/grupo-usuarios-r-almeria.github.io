@@ -58,7 +58,7 @@ title: Grupo de Usuarios de R Almería
         $.ajax({url:'http://json2jsonp.com/?url='+discourseUrl+'latest.json',
             dataType: 'jsonp',
             success:function(data){
-                data = data.topic_list.topics.slice(0, 100);
+                data = data.topic_list.topics;
 
                 var elemento='<ul>'
                 $.each(data,function(index,element){
