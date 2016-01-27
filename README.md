@@ -57,9 +57,6 @@ Webmaster: [Indavelopers](mailto:info@indavelopers.com)
 
 ### To-do list
 
-* Configurar calendario en Actividades.
-* Modificar logotipos y favicon.
-* Elegir paleta de colores y cambiar en style.css (al final del documento).
 * Tests con travis-CI.
 
 ### Licencia
