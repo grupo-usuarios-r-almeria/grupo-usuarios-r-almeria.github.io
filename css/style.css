@@ -68,7 +68,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    background: #dc0000;
+    background: #f05a28;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px;
@@ -241,7 +241,7 @@ table {
 }
 
 td, th {
-    background: #dc0000;
+    background: #f05a28;
     padding: 20px;
     color: #ffffff;
     text-align: center;
@@ -318,7 +318,7 @@ footer .container{
     padding:20px 0 10px 0;
 }
 footer{
-	background:#dc0000;
+	background:#f05a28;
 	color:#fff;
 }
 
@@ -356,16 +356,16 @@ a:hover, a:visited, a {
 }
 
 .destacado h1 a {
-    color: #dc0000;
+    color: #f05a28;
 }
 
 .destacado h1 a:link {
-    color: #dc0000;
+    color: #f05a28;
     text-decoration: none;
 }
 
 .destacado h1 a:visited {
-    color: #dc0000;
+    color: #f05a28;
     text-decoration: none;
 }
 
